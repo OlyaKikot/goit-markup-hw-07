@@ -1,0 +1,35 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.icon-company__item {
+  width: 170px;
+  height: 90px;
+}
+
+.icon-company__link {
+  transition: color 250ms var(--cubic-bezier),
+    border-color 250ms var(--cubic-bezier);
+  display: flex;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--icon-color);
+  color: var(--icon-color);
+}
+.icon-company__icon {
+  fill: currentColor;
+}
+.icon-company__link:hover,
+.icon-company__link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.icon-company {
+  display: flex;
+  justify-content: space-between;
+}
