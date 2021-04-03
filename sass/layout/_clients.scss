@@ -3,11 +3,6 @@
   padding-bottom: 94px;
 }
 
-.icon-company__item {
-  width: 170px;
-  height: 90px;
-}
-
 .icon-company__link {
   transition: color 250ms var(--cubic-bezier),
     border-color 250ms var(--cubic-bezier);
@@ -19,17 +14,21 @@
   justify-content: center;
   border: 1px solid var(--icon-color);
   color: var(--icon-color);
-}
-.icon-company__icon {
-  fill: currentColor;
-}
-.icon-company__link:hover,
-.icon-company__link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
 .icon-company {
   display: flex;
   justify-content: space-between;
+}
+.icon-company__icon {
+  fill: currentColor;
+}
+.icon-company__item {
+  width: 170px;
+  height: 90px;
 }

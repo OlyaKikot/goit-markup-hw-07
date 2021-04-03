@@ -1,8 +1,7 @@
-.button {
-  transition: background-color 250ms var(--cubic-bezier);
-  display: inline-block;
+%button {
+  transition: background-color 250ms var(--cubic-bezier),
+    box-shadow 250ms var(--cubic-bezier);
   border: 1px solid transparent;
-  padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;
   font-weight: 700;
@@ -13,9 +12,4 @@
   background-color: var(--accent-color);
   cursor: pointer;
   font-family: inherit;
-}
-
-.button:hover,
-.button:focus {
-  background-color: var(--background-hover);
 }

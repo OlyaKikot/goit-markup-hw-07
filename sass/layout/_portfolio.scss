@@ -1,3 +1,7 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .cart-set__conteiner-text {
   position: absolute;
   transform: translateY(101%);
@@ -9,11 +13,12 @@
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--primary-color);
   padding: 63px 24px;
+  .cart-set__item:hover &,
+  .cart-set__item:focus & {
+    transform: translateY(0);
+  }
 }
-.cart-set__item:hover .cart-set__conteiner-text,
-.cart-set__item:focus .cart-set__conteiner-text {
-  transform: translateY(0);
-}
+
 .cart-set__text {
   font-family: var(--main-font);
   font-weight: 400;
@@ -25,17 +30,13 @@
   overflow: hidden;
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .cart-set__link {
   transition: box-shadow 250ms var(--cubic-bezier);
   display: block;
-}
-.cart-set__link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .filter {
@@ -60,6 +61,13 @@
   cursor: pointer;
   font-family: inherit;
   background: var(--light-background);
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .filter__button-accent {
@@ -71,14 +79,6 @@
 .cart-person {
   position: relative;
   overflow: hidden;
-}
-
-.filter__button:hover,
-.filter__button:focus {
-  color: var(--primary-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .block__title {
